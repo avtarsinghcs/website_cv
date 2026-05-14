@@ -425,31 +425,16 @@ section {
   border-radius: 22px;
   overflow: hidden;
   background: var(--card2);
-  display: flex; align-items: center; justify-content: center;
 }
-.hero-image-placeholder {
-  width: 100%; height: 100%;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center; gap: 1rem;
-  background: linear-gradient(135deg, #0d0d0d, #111);
+.hero-image-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 22px;
+  display: block;
 }
-.hero-avatar-circle {
-  width: 120px; height: 120px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--cyan));
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 800; font-size: 2.5rem;
-  color: #fff;
-  box-shadow: 0 0 40px rgba(124,106,255,0.4);
-}
-.hero-placeholder-text {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--muted);
-  letter-spacing: 0.1em;
-  text-align: center;
-}
+
 /* Floating badges on hero image */
 .hero-badge {
   position: absolute;
@@ -1212,7 +1197,7 @@ footer {
           View Projects
         </a>
         <a href="#contact" class="btn-ghost">Contact Me</a>
-        <a href="#" class="btn-ghost" onclick="alert('Resume download — add your PDF link here!')">
+        <a href="avtarcse.pdf" download="Avtar_Singh_Resume.pdf" class="btn-ghost">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
           Resume
         </a>
@@ -1223,13 +1208,7 @@ footer {
         <div class="hero-image-glow"></div>
         <div class="hero-image-border"></div>
         <div class="hero-image-inner">
-          <div class="hero-image-placeholder">
-            <div class="hero-avatar-circle">AS</div>
-            <div class="hero-placeholder-text">
-              Replace with your photo<br>
-              <span style="opacity:0.5">Recommended: 400×500px</span>
-            </div>
-          </div>
+          <img src="avtaresc.jpeg" alt="Avtar Singh">
         </div>
         <!-- floating badges -->
         <div class="hero-badge">
